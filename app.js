@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const router = require('./routes/router');
 
-app.get('/', (req, res) => {
-    res.send("Hello from server!!")
-})
+// Using router for each route
+app.use('/', router);
 
 // listening the server
 app.listen(port, () => {
