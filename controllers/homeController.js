@@ -1,6 +1,6 @@
 // controller for Home page
 const homeController = (req, res) => {
-    res.send("<h1>Home Page</h1>");
+    res.render("index", { title: 'Home' });
 }
 
 module.exports = homeController;
