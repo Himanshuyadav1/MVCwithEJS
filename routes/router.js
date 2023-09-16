@@ -1,20 +1,18 @@
 const express = require('express');
 // creating instance from Router class
 const router = express.Router();
+//getting controllers
+const homeController = require('../controllers/homeController');
+const aboutController = require('../controllers/aboutController');
+const errorController = require('../controllers/errorController');
 
 //Route for Home page
-router.get('/', (req, res) => {
-    res.send('Home Page');
-});
+router.get('/', homeController);
 
 //Route for About page
-router.get('/about', (req, res) => {
-    res.send('About Page');
-});
+router.get('/about', aboutController);
 
 //handlin for 404 error
-router.get('*', (req, res) => {
-    res.send("404 Not Found!!")
-})
+router.get('*', errorController);
 
 module.exports = router;
