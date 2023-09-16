@@ -9,7 +9,8 @@ Steps for creating project
 4.  create basic routes for project in routes/router.js
 5.  create controller for those basic routes
 6.  create ejs files for views and send them to client
-7.  create some static file (css, js, image) and serve them
+7.  seprate common code in views/partials
+8.  create some static file (css, js, image) and serve them
 
 For running this project go to command line follow below Steps
 1.  git clone https://github.com/Himanshuyadav1/mvcstructure.git
