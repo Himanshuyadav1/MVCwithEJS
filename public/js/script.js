@@ -1,0 +1,1 @@
+alert("MVC Structure in Express with EJS Template engine.");
